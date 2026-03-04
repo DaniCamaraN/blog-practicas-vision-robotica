@@ -57,7 +57,7 @@ error_angle = x_bottom - x_top
 ```
 Y el error total pasa a ser:
 ```
-error = weight\_pos * error\_position + weight\_ang * error\_angle
+error = weight_pos * error_position + weight_ang * error_angle
 ```
 Teniendo que ajustar estos dos pesos, dando más o menos importancia a la posición o al ángulo.
 
@@ -139,7 +139,7 @@ Se dejó muy pequeño porque:
 
 Una mejora clave fue hacer que la velocidad dependiera del **ángulo**.
 ```
-v = V\_max - Kp\_v * abs(error\_angle) - Kd\_v * abs(derivative)
+v = V_max - Kp_v * abs(error_angle) - Kd_v * abs(derivative)
 ```
 
 ### Parámetros:
