@@ -89,7 +89,7 @@ Tras pruebas empíricas:
 Una vez definido un error más robusto, se implementó el controlador:
 
 ```
-w = Kp * error + Kd * derivative + Ki * integral}
+w = Kp * error + Kd * derivative + Ki * integral
 ```
 
 ### Parámetros finales:
