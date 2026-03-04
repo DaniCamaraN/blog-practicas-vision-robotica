@@ -25,9 +25,9 @@ Inicialmente, la línea se detectaba mediante:
 3. Cálculo del centro horizontal de la línea en una zona inferior de la imagen.
 
 El error se calculaba simplemente como:
-
-$$\text{error = centro\_imagen - x\_linea}$$
-
+```
+error = centro_imagen - x_linea
+```
 
 #### ❌ Problema detectado
 
@@ -51,14 +51,14 @@ Para solucionar el problema anterior, se decidió calcular **dos puntos** de la 
 
 Esto permite calcular:
 
-
-$$\text{error_position = center\_image - x\_bottom}$$
-$$\text{error_angle = x\_bottom - x\_top}$$
-
+```
+error_position = center_image - x_bottom
+error_angle = x_bottom - x_top
+```
 Y el error total pasa a ser:
-
-$$\text{error = weight\_pos * error\_position + weight\_ang * error\_angle}$$
-
+```
+error = weight\_pos * error\_position + weight\_ang * error\_angle
+```
 Teniendo que ajustar estos dos pesos, dando más o menos importancia a la posición o al ángulo.
 
 ### Ventajas
@@ -88,9 +88,9 @@ Tras pruebas empíricas:
 
 Una vez definido un error más robusto, se implementó el controlador:
 
-
-$$\text{w = Kp * error + Kd * derivative + Ki * integral}$$
-
+```
+w = Kp * error + Kd * derivative + Ki * integral}
+```
 
 ### Parámetros finales:
 
@@ -138,9 +138,9 @@ Se dejó muy pequeño porque:
 ## Fase 4 — Control dinámico de velocidad
 
 Una mejora clave fue hacer que la velocidad dependiera del **ángulo**.
-
-$$\text{v = V\_max - Kp\_v * abs(error\_angle) - Kd\_v * abs(derivative)}$$
-
+```
+v = V\_max - Kp\_v * abs(error\_angle) - Kd\_v * abs(derivative)
+```
 
 ### Parámetros:
 
