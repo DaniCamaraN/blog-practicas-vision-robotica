@@ -304,4 +304,4 @@ El resultado final es un controlador más robusto, estable y adaptable a distint
 
 ## Video
 
-[![Ver vídeo](media/preview.png)](media/demo.mp4)
+[![Demo](https://img.youtube.com/vi/ABC123XYZ/0.jpg)](https://youtu.be/QQivoc8XLO0)
