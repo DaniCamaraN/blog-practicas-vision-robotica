@@ -304,4 +304,6 @@ El resultado final es un controlador más robusto, estable y adaptable a distint
 
 ## Video
 
+Tiempo de simulación: **65 seg**
+
 [![Demo PID Follow Line](https://img.youtube.com/vi/QQivoc8XLO0/maxresdefault.jpg)](https://youtu.be/QQivoc8XLO0)
