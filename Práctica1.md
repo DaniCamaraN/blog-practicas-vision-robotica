@@ -304,4 +304,4 @@ El resultado final es un controlador más robusto, estable y adaptable a distint
 
 ## Video
 
-[![Demo](https://img.youtube.com/vi/ABC123XYZ/0.jpg)](https://youtu.be/QQivoc8XLO0)
+[![Demo PID Follow Line](https://img.youtube.com/vi/QQivoc8XLO0/maxresdefault.jpg)](https://youtu.be/QQivoc8XLO0)
