@@ -1,0 +1,9 @@
+# Media files
+media/
+
+# Videos
+*.mp4
+*.mov
+
+# Preview images
+*preview*.png

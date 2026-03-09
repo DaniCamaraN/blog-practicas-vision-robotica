@@ -301,3 +301,7 @@ A lo largo del desarrollo se aprendieron varias lecciones importantes:
 - Limitar el término integral evitó inestabilidades.
 
 El resultado final es un controlador más robusto, estable y adaptable a distintos circuitos.
+
+## Video
+
+[![Ver vídeo](media/preview.png)](media/demo.mp4)
