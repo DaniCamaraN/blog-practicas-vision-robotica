@@ -218,6 +218,48 @@ Características:
 - Sensibilidad al parámetro de confianza.
 - Puntos mal reconstruidos por rayos casi paralelos.
 
-## Video
+---
 
+## 11. Evolución del código / mejoras recientes
+
+Tras revisar el código inicial, se realizaron las siguientes mejoras:
+
+### Procesamiento en orden y por bloques
+
+Ahora se procesan todos los puntos de interés en orden, en lugar de elegir 500 puntos aleatorios.
+
+Se mantiene el procesamiento en bloques de 500 puntos para no saturar memoria ni la GUI.
+
+Se imprime el progreso en porcentaje durante la reconstrucción:
+
+```python
+progress = (i / total_points) * 100
+print(f"Progreso: {progress:.2f}%")
+```
+
+### Visualización de toda la nube acumulada
+
+Antes se mostraban los puntos con `gui.ShowNewPoints(points3D)`.
+
+Ahora se visualiza toda la nube acumulada en cada bloque usando:
+
+```python
+gui.ShowAllPoints(points3D)
+```
+
+### Beneficios
+
+- Se asegura que todos los puntos de interés sean procesados.
+- La nube 3D es más completa y estructurada.
+- Permite un seguimiento claro del progreso de la reconstrucción.
+
+---
+
+## Videos/Imágenes
+
+# Sampleando puntos Random:
 [![3D Reconstruction Demo](https://img.youtube.com/vi/_J_dqgsMbxw/maxresdefault.jpg)](https://youtu.be/_J_dqgsMbxw)
+
+# Sampleando todos los puntos:
+[![3D Reconstruction Demo puntos ordenados](https://img.youtube.com/vi/uhOh2A0iC84/maxresdefault.jpg)](https://youtu.be/uhOh2A0iC84)
+![Reconstrucción 3D puntos ordenados](ImagenReconstruccion3D.png)
