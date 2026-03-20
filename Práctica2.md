@@ -218,3 +218,6 @@ Características:
 - Sensibilidad al parámetro de confianza.
 - Puntos mal reconstruidos por rayos casi paralelos.
 
+## Video
+
+[![3D Reconstruction Demo](https://img.youtube.com/vi/_J_dqgsMbxw/maxresdefault.jpg)](https://youtu.be/_J_dqgsMbxw)
